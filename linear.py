@@ -38,7 +38,7 @@ st.title("Demand Prediction App")
 st.subheader("Enter the values for each feature:")
 user_input = []
 
-for i, feature in enumerate(features):
+for i, feature in enumerate(feature_cols):
     value = st.number_input(label=f"{feature}", step=1.0, key=f"{feature}_{i}")
     user_input.append(value)
     
